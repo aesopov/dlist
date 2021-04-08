@@ -1,8 +1,10 @@
 [package]
+authors = ["Mikhail Isupov <lam0x86@gmail.com>"]
+description = "List data structure based on AVL tree. It can store elements which have dimension and quickly search for elements by distance from 0."
+edition = "2018"
+license = "MIT"
 name = "dlist"
 version = "0.1.0"
-authors = ["Mikhail Isupov <lam0x86@gmail.com>"]
-edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
