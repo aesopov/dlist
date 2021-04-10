@@ -1,6 +1,6 @@
 extern crate dlist;
 
-use dlist::{DList, Measurer};
+use dlist::{DList, Measurer, DefaultMeasurer};
 
 struct MeasurerU32;
 
@@ -17,7 +17,7 @@ impl Measurer<u32> for MeasurerU32 {
 
 #[test]
 fn get_dist() {
-    let mut dl = DList::new(MeasurerU32);
+    let mut dl = DList::new(DefaultMeasurer::new() as DefaultMeasurer<i32>);
     dl.append(0);
     dl.append(1);
     dl.append(2);
